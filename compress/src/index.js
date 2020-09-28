@@ -89,5 +89,5 @@ function put(destBucket, destKey, data) {
 async function compress(inBuffer) {
   const image = await jimp.read(inBuffer);
   image.quality(quality);
-  return image.getBufferAsync(jimp.MIME_JPEG);
+  return image.getBufferAsync(jimp.MIME_PNG);
 }
